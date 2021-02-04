@@ -53,7 +53,7 @@ $> source .enviornment/bin/activate
 
 # :warning: READ THIS :warning:
 
-I **cannot** emphasize this enough: Installing arbitrary packages into your operating system’s Python environment will end in tears. Using, for example, `pip install --user blahblahblah` is tolerable for *some* multipurpose libraries (things like 'matplotlib' and 'numpy'). Using `sudo pip install blahblahblah` will make you question your life decisions.³
+I **cannot** emphasize this enough: Installing arbitrary packages into your operating system’s Python environment will end in tears. Using, for example, `pip install --user blahblahblah` is tolerable for *some* multipurpose libraries (things like 'matplotlib' and 'numpy'). Using `sudo pip install blahblahblah` will only serve to make you question your life decisions.³
 
 ---
 
