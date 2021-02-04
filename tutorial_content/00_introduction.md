@@ -51,4 +51,10 @@ $> which python
 
 **Every** command and installation in the rest of this document will assume that you’re properly in your development environment!
 
+# :warning: READ THIS :warning:
+
 I **cannot** emphasize this enough: Installing arbitrary packages into your operating system’s Python environment will end in tears. Using, for example, `pip install --user blahblahblah` is tolerable for some multipurpose libraries. Using `sudo pip install blahblahblah` will make you question your life decisions.²
+
+¹ If using a rolling release distribution (like Arch, Manjaro, etc.), it is very important to ensure that your base Python binary is stable. My preference is to download and compile a specific Python binary to `/opt/python/3.x` and use that for virtual environments. 
+
+² Your operating systme may expect specific versions of various Python libraries. By using `sudo` and forcefully overwriting those libraries, the operating system may be unable to update or perform other seemingly mundane tasks.
