@@ -53,7 +53,7 @@ $> source .enviornment/bin/activate
 
 # :warning: READ THIS :warning:
 
-I **cannot** emphasize this enough: Installing arbitrary packages into your operating system’s Python environment will end in tears. Using, for example, `pip install --user blahblahblah` is tolerable for some multipurpose libraries. Using `sudo pip install blahblahblah` will make you question your life decisions.³
+I **cannot** emphasize this enough: Installing arbitrary packages into your operating system’s Python environment will end in tears. Using, for example, `pip install --user blahblahblah` is tolerable for *some* multipurpose libraries (things like 'matplotlib' and 'numpy'). Using `sudo pip install blahblahblah` will make you question your life decisions.³
 
 ---
 
@@ -61,4 +61,4 @@ I **cannot** emphasize this enough: Installing arbitrary packages into your oper
 
 ² The `-p` option is a purely cosemetic quality-of-life enhancer to show when you're operating within a virtual environment
 
-³ Your operating system may expect specific versions of various Python libraries (things like 'matplotlib' and 'numpy'). By using `sudo` and forcefully overwriting libraries like 'requests' and 'openssl', the operating system may be unable to update or perform other seemingly mundane tasks.
+³ Your operating system may expect specific versions of various Python libraries. By using `sudo` and forcefully overwriting libraries like 'requests' and 'openssl', the operating system may be unable to update or perform other seemingly mundane tasks.
