@@ -24,7 +24,7 @@ So now we’re nice and comfortable in our `${PROJECT_ROOT}` directory. But it�
 
 And we all know that we should never, **ever** let our project libraries commingle with our operating system libraries. So choose one of:
 
-1) You’re feeling pragmatic and want to use what is generally seen as the simplest solution: `virtualenv --prompt='.:: Pantry Manager ::.' -p python3 .environment`¹
+1) You’re feeling pragmatic and want to use what is generally seen as the simplest solution: `virtualenv --prompt='.:: Pantry Manager ::.' -p python3 .environment`¹²
    * This uses `pip` and create a new subdirectory named `.environment` to house the dependencies that you’ll be needing.
 
 2) You like new things and are willing to dive into the documentation for projects that may have less presence on Stack Exchange: `poetry new 'Pantry-Manager'`
@@ -44,7 +44,7 @@ For those who chose Option #1, you can do a sanity check by running:
 $> source .enviornment/bin/activate
 .:: Pantry Manager ::.
 
-$> which python
+.:: Pantry Manager::. $> which python
 /path/to/your/project/.environment/bin/python
 ```
 
@@ -53,10 +53,12 @@ $> which python
 
 # :warning: READ THIS :warning:
 
-I **cannot** emphasize this enough: Installing arbitrary packages into your operating system’s Python environment will end in tears. Using, for example, `pip install --user blahblahblah` is tolerable for some multipurpose libraries. Using `sudo pip install blahblahblah` will make you question your life decisions.²
+I **cannot** emphasize this enough: Installing arbitrary packages into your operating system’s Python environment will end in tears. Using, for example, `pip install --user blahblahblah` is tolerable for some multipurpose libraries. Using `sudo pip install blahblahblah` will make you question your life decisions.³
 
 ---
 
 ¹ If using a rolling release distribution (like Arch, Manjaro, etc.), it is very important to ensure that your base Python binary is stable. My preference is to download and compile a specific Python binary to `/opt/python/3.x` and use that for virtual environments. 
 
-² Your operating systme may expect specific versions of various Python libraries. By using `sudo` and forcefully overwriting those libraries, the operating system may be unable to update or perform other seemingly mundane tasks.
+² The `-p` option is a purely cosemetic quality-of-life enhancer to show when you're operating within a virtual environment
+
+³ Your operating systme may expect specific versions of various Python libraries. By using `sudo` and forcefully overwriting those libraries, the operating system may be unable to update or perform other seemingly mundane tasks.
