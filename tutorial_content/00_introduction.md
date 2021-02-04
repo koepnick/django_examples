@@ -2,6 +2,8 @@
 
 Hi!
 
-This tutorial is going to follow my own personal preferences for project development and deployment. Generally:
+This tutorial is going to follow my own personal preferences for project development and deployment. 
 
-![](tutorial_content/images/00_workflow.png?raw=true)
+Generally, it's:
+
+![](images/00_workflow.png)
