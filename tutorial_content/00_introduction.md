@@ -38,7 +38,7 @@ And we all know that we should never, **ever** let our project libraries comming
 I’ll be using Option #1 from here on out. Primarily for the sake of the majority who already know it. But also because it is the most generic
 and it’s easier to take instructions meant for it and fiddle with them to get analogs in Poetry and Conda.
 
-For those who also chose Option #1, you can do a sanity check. From `${PROJECT_ROOT}` run: 
+For those who chose Option #1, you can do a sanity check by running: 
 
 ```
 $> source .enviornment/bin/activate
