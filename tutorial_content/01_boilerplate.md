@@ -47,7 +47,7 @@ Starting development server at http://127.0.0.1:8000/
 Quit the server with CONTROL-C.
 ```
 
-Open your web browser of choice and navigate to [http://localhost:8000]()
+Open your web browser of choice and navigate to [http://localhost:8000](http://localhost:8000)
 
 If you’ve made it this far, congratulations! Go ahead and add it to your résumé. You’ve earned it.
 
