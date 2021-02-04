@@ -61,4 +61,4 @@ I **cannot** emphasize this enough: Installing arbitrary packages into your oper
 
 ² The `-p` option is a purely cosemetic quality-of-life enhancer to show when you're operating within a virtual environment
 
-³ Your operating system may expect specific versions of various Python libraries (things like 'matplotlib' and 'numpy'). By using `sudo` and forcefully overwriting those libraries, the operating system may be unable to update or perform other seemingly mundane tasks.
+³ Your operating system may expect specific versions of various Python libraries (things like 'matplotlib' and 'numpy'). By using `sudo` and forcefully overwriting libraries like 'requests' and 'openssl', the operating system may be unable to update or perform other seemingly mundane tasks.
