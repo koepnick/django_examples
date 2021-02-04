@@ -32,9 +32,14 @@ I’ll briefly go over *my* particular setup. All of the code in this repository
 ### Debugging
 * Python debugger(s): [pudb](https://pypi.org/project/pudb/) and
   [ipdb](https://pypi.org/project/ipdb/)
-* Traffic analyses: [mitmproxy]
-* API debugging: [insomnia
+* Traffic analyses: [mitmproxy](https://mitmproxy.org/)
+* API debugging: [insomnia](https://insomnia.rest/)
 
 ### Devops
-* PubSub server: [mosquitto]
-* Container engine: [Docker]
+> I’m only listing here the services that have *some* sort of entry point into a Django project via a native(-ish) module.
+* MQTT server: [mosquitto](https://mosquitto.org/)
+* Container engine: [Docker](https://www.docker.com/)
+* Application server: [gunicorn](https://gunicorn.org/)
+* Message bus: [kafka](https://kafka.apache.org/)
+* Caching engine and task queue: [redis](https://kafka.apache.org/)
+* NoSQL server: [MongoDB](https://www.mongodb.com/)
