@@ -24,7 +24,7 @@ So now we’re nice and comfortable in our `${PROJECT_ROOT}` directory. But it�
 
 And we all know that we should never, **ever** let our project libraries commingle with our operating system libraries. So choose one of:
 
-1) You’re feeling pragmatic and want to use what is generally seen as the simplest solution: `virtualenv --prompt='.:: Pantry Manager ::.' -p python3 .environment`¹²
+1) You’re feeling pragmatic and want to use what is generally seen as the simplest solution: `virtualenv --prompt='.:: Pantry Manager ::.' -p python3 .environment`¹ ²
    * This uses `pip` and create a new subdirectory named `.environment` to house the dependencies that you’ll be needing.
 
 2) You like new things and are willing to dive into the documentation for projects that may have less presence on Stack Exchange: `poetry new 'Pantry-Manager'`
